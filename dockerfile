@@ -6,7 +6,7 @@ LABEL dev="arpeeta"
 
 RUN apt-get update
 RUN apt-get install unzip -y
-RUN apt-get install apache2-y
+RUN apt-get install apache2 -y
 # Excute linux cmd we use RUN 
 
 ADD https://templatemo.com/download/templatemo_623_novapay  /var/www/html/templatemo_623_novapay.zip
