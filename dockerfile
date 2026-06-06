@@ -5,7 +5,7 @@ LABEL dev="arpeeta"
 #will use for tags
 
 RUN apt-get update
-RUN apt-get insatll unzip -y
+RUN apt-get install unzip -y
 RUN apt-get install apache2-y
 # Excute linux cmd we use RUN 
 
