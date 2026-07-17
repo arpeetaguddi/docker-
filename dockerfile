@@ -17,3 +17,9 @@ WORKDIR /var/www/html/
 
 RUN unzip templatemo_623_novapay.zip
 RUN mv templatemo_623_novapay/* /var/www/html
+
+# Expose port 80
+EXPOSE 80
+
+# Start Apache
+CMD ["apachectl", "-D", "FOREGROUND"]
